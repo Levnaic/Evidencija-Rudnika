@@ -1,0 +1,18 @@
+.formaBtn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    text-decoration: none;
+    background-color: transparent;
+    color: $pozadina;
+    &:hover {
+      background-color: $primarnaTamnija;
+      color: $pozadina;
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: 0 0 10px $primarnaSvetlija;
+    }
+}

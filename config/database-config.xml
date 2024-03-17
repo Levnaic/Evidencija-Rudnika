@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseConfig>
+    <host>localhost</host>
+    <dbname>evidencija_rudnika</dbname>
+    <user>root</user>
+    <pass></pass>
+</databaseConfig>

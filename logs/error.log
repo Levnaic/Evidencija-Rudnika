@@ -1,0 +1,17 @@
+19-01-2024 07:15:38 [Greska u validaciji:] Pogresan format stringa in Klase\Bezbednost on line 90
+19-01-2024 07:15:38 [Greska u validaciji:] Pogresan format stringa in Klase\Bezbednost on line 96
+19-01-2024 07:15:41 [Greska u validaciji:] Pogresan format stringa in Klase\Bezbednost on line 90
+19-01-2024 07:15:41 [Greska u validaciji:] Pogresan format stringa in Klase\Bezbednost on line 96
+19-01-2024 07:15:46 [Greska u validaciji:] Pogresan format stringa in Klase\Bezbednost on line 90
+19-01-2024 07:15:46 [Greska u validaciji:] Pogresan format stringa in Klase\Bezbednost on line 96
+19-01-2024 07:16:22 [Greska u validaciji:] Pogresan format stringa in Klase\Bezbednost on line 90
+19-01-2024 07:16:22 [Greska u validaciji:] Pogresan format stringa in Klase\Bezbednost on line 96
+02-02-2024 00:37:19 [Greška u bazi podataka] SQLSTATE[HY000]: General error: 1356 View 'evidencija_rudnika.rudnik_pogled' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them|SELECT * FROM rudnik_pogled in Modeli\Rudnik on line 33
+02-02-2024 00:39:58 [Greška u bazi podataka] SQLSTATE[HY000]: General error: 1356 View 'evidencija_rudnika.rudnik_pogled' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them|SELECT * FROM rudnik_pogled in Modeli\Rudnik on line 33
+02-02-2024 00:40:03 [Greška u bazi podataka] SQLSTATE[HY000]: General error: 1356 View 'evidencija_rudnika.rudnik_pogled' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them|SELECT * FROM rudnik_pogled in Modeli\Rudnik on line 33
+02-02-2024 00:40:04 [Greška u bazi podataka] SQLSTATE[HY000]: General error: 1356 View 'evidencija_rudnika.rudnik_pogled' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them|SELECT * FROM rudnik_pogled in Modeli\Rudnik on line 33
+02-02-2024 00:40:20 [Greška u bazi podataka] SQLSTATE[HY000]: General error: 1356 View 'evidencija_rudnika.rudnik_pogled' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them|SELECT * FROM rudnik_pogled in Modeli\Rudnik on line 33
+02-02-2024 00:48:17 [HTTP status 404] Page with url: /kazi not found in Klase\Ruter on line 73
+15-03-2024 03:01:30 [Greška u bazi podataka] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'vrstaRudeId' in 'field list'|INSERT INTO rudnik (imeRudnika, imaDozvolu, vrstaRudeId) VALUES (:imeRudnika, :imaDozvolu, :vrstaRudeId) in Modeli\Rudnik on line 33
+15-03-2024 05:00:58 [Greška u bazi podataka] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'vrstaRudeId' in 'field list'|INSERT INTO rudnik (imeRudnika, imaDozvolu, vrstaRudeId) VALUES (:imeRudnika, :imaDozvolu, :vrstaRudeId) in Modeli\Rudnik on line 33
+15-03-2024 11:53:05 [Greška pri prijavi] Loše akreditacije tokom prijave in Modeli\Auth on line 29

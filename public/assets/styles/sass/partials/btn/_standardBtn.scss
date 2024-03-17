@@ -1,0 +1,17 @@
+.standardBtn {
+  all: unset;
+  border-radius: 15px;
+  background-color: $primarnaTamnija;
+  color: $pozadina;
+  border: 2px solid $primarnaTamnija;
+  padding: 7px 12px;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.96);
+  }
+  &:hover {
+    background-color: $primarnaSvetlija;
+    border: 2px solid $primarnaTamnija;
+    color: $primarnaTamnija;
+  }
+}

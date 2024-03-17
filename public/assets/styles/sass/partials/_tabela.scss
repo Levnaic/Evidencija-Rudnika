@@ -1,0 +1,77 @@
+#tabelaRudnika {
+    margin-top: 20px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+  
+      th, td {
+        border: 3px solid $tekstPrimarni;
+        background-color: $primarna;
+        padding: 8px;
+        text-align: left;
+      }
+  
+      th {
+        background-color: $primarnaTamnija;
+        color: $pozadina;
+        font-weight: 200;
+      }
+
+  
+      .usersTableBtns {
+        .tableBtnsContainer {
+          display: flex;
+  
+          .adminAction {
+            padding: 6px 12px;
+            margin-right: 6px;
+            text-decoration: none;
+            color: $pozadina;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+  
+            &.firstActionBtn {
+              background-color: $primarnaSvetlija;
+              color: $tekstPrimarni;
+            }
+  
+            &:last-child {
+              background-color: $primarnaTamnija; // Red color for "Delete" button
+            }
+  
+            &:hover {
+              filter: brightness(1.2);
+            }
+          }
+        }
+      }
+    }
+  
+    form {
+      display: flex;
+      align-items: center;
+  
+      input[type="text"] {
+        padding: 6px;
+        margin-right: 6px;
+      }
+  
+      .filterDugme {
+        padding: 6px 12px;
+        background-color: $primarna; // Blue color for "Pretraži" button
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: $primarnaTamnija;
+        }
+      }
+    }
+  }

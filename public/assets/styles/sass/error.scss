@@ -1,0 +1,15 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+
+#errorMsg {
+  h1{
+    text-align: start;
+  }
+  margin-top: 200px;
+  height: 80vh;
+  a {
+    color: $primarna;
+    font-size: 22px;
+  }
+}
