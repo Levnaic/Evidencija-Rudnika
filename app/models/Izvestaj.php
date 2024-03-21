@@ -13,7 +13,7 @@ class Izvestaj extends OsnovniModel
     // GET
     public function ucitajSveIzvestaje()
     {
-        $upit = "SELECT * FROM izvestaj";
+        $upit = "SELECT * FROM promet";
         $izjava = $this->izvrsiUpit($upit);
 
         $izvestaji = $izjava->fetchAll(PDO::FETCH_OBJ);
@@ -27,7 +27,7 @@ class Izvestaj extends OsnovniModel
 
     public function ucitajIzvestajPoId($id)
     {
-        $upit = "SELECT * FROM izvestaj WHERE id = :id";
+        $upit = "SELECT * FROM promet WHERE id = :id";
         $parametri = [':id' => $id];
         $izjava = $this->izvrsiUpit($upit, $parametri);
 
@@ -40,7 +40,7 @@ class Izvestaj extends OsnovniModel
 
     public function ucitajIzvestajePoPodnesiocu($podnesilac)
     {
-        $upit = "SELECT * FROM izvestaj WHERE podnesilac = :podnesilac";
+        $upit = "SELECT * FROM promet WHERE podnesilac = :podnesilac";
         $parametri = [":podnesilac" => $podnesilac];
         $izjava = $this->izvrsiUpit($upit, $parametri);
 
@@ -55,7 +55,7 @@ class Izvestaj extends OsnovniModel
 
     public function ucitajIdRudnikaPoIdIzvestaja($id)
     {
-        $upit = "SELECT idRudnika FROM izvestaj WHERE id = :id";
+        $upit = "SELECT idRudnika FROM promet WHERE id = :id";
         $parametri = [":id" => $id];
         $izjava = $this->izvrsiUpit($upit, $parametri);
 
@@ -68,7 +68,7 @@ class Izvestaj extends OsnovniModel
 
     public function ucitajFilterisaneIzvestajePoPodnesiocu($filterVrednost)
     {
-        $upit = "SELECT * FROM izvestaj WHERE podnesilac LIKE :filterVrednost";
+        $upit = "SELECT * FROM promet WHERE podnesilac LIKE :filterVrednost";
         $filterVrednost = "%" . $filterVrednost . "%";
         $parametri = [":filterVrednost" => $filterVrednost];
         $izjava = $this->izvrsiUpit($upit, $parametri);
@@ -86,7 +86,7 @@ class Izvestaj extends OsnovniModel
     // POST
     public function dodajIzvestaj($idRudnika, $prihodi, $rashodi, $podnesilac)
     {
-        $upit = "INSERT INTO izvestaj (idRudnika, prihodi, rashodi, podnesilac) VALUES (:idRudnika, :prihodi, :rashodi, :podnesilac)";
+        $upit = "INSERT INTO promet (idRudnika, prihodi, rashodi, podnesilac) VALUES (:idRudnika, :prihodi, :rashodi, :podnesilac)";
         $parametri = [
             ":idRudnika" => $idRudnika,
             ":prihodi" => $prihodi,
@@ -100,7 +100,7 @@ class Izvestaj extends OsnovniModel
     // PATCH
     public function azurirajIzvestaj($id, $idRudnika, $prihodi, $rashodi)
     {
-        $upit = "UPDATE izvestaj SET idRudnika = :idRudnika, prihodi = :prihodi, rashodi = :rashodi WHERE id = :id";
+        $upit = "UPDATE promet SET idRudnika = :idRudnika, prihodi = :prihodi, rashodi = :rashodi WHERE id = :id";
 
         $parametri = [
             ':idRudnika' => $idRudnika,
@@ -115,7 +115,7 @@ class Izvestaj extends OsnovniModel
     // DELETE
     public function obrisiIzvestaj($id)
     {
-        $upit = "DELETE FROM izvestaj WHERE id = :id";
+        $upit = "DELETE FROM promet WHERE id = :id";
 
         $parametri = [':id' => $id];
 

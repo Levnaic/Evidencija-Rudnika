@@ -36,8 +36,8 @@
                 <td><?php echo $red->imeRudnika; ?></td>
                 <td><?php echo $red->vrstaRude; ?></td>
                 <td><?php echo $red->imaDozvolu; ?></td>
-                <td><?php echo $red->prihodi; ?></td>
-                <td><?php echo $red->rashodi; ?></td>
+                <td><?php echo $red->ukupniPrihodi; ?></td>
+                <td><?php echo $red->ukupniRashodi; ?></td>
                 <td><?php echo $red->profit; ?></td>
                 <td class="usersTableBtns">
                     <div class="tableBtnsContainer">

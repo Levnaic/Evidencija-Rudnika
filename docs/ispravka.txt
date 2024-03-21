@@ -1,6 +1,4 @@
 -struktura tabele rudnik, id vrsta rude, napraviti novu tabelu vrsta rude, spojene preko stranog kljuca
 -u dokumentaciji izvestaj mora da ima rudnik
--tabela izvestaj mora da menja ime (promet)
--promena naziva polja u tabeli rudnik (ukupni prihodi/rashodi)
 -u tabeli promet dodati polje dodati opis
 -kada se zapisuje zapis u tabelu proment, ne sme biti i prihodi i rashodi, prijaviti gresku
