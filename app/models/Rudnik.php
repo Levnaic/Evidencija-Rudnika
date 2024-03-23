@@ -9,7 +9,9 @@ class Rudnik extends OsnovniModel
     // GET
     public function ucitajSveRudnike()
     {
-        $upit = "SELECT * FROM rudnik";
+        $upit = "SELECT rudnik.*, vrsta_rude.nazivRude AS vrstaRude 
+        FROM rudnik 
+        JOIN vrsta_rude ON rudnik.idRude = vrsta_rude.id";
         $izjava = $this->izvrsiUpit($upit);
 
         $rudnici = $izjava->fetchAll(PDO::FETCH_OBJ);
@@ -33,7 +35,10 @@ class Rudnik extends OsnovniModel
 
     public function ucitajRudnikPoId($id)
     {
-        $upit = "SELECT * FROM rudnik WHERE id = :id";
+        $upit = "SELECT rudnik.*, vrsta_rude.nazivRude AS vrstaRude 
+        FROM rudnik 
+        JOIN vrsta_rude ON rudnik.idRude = vrsta_rude.id
+        WHERE rudnik.id = :id";
         $parametri = [':id' => $id];
         $izjava = $this->izvrsiUpit($upit, $parametri);
 
@@ -59,7 +64,10 @@ class Rudnik extends OsnovniModel
 
     public function ucitajFilterisaneRudnikePoImenu($filterVrednost)
     {
-        $upit = "SELECT * FROM rudnik WHERE imeRudnika LIKE :filterVrednost";
+        $upit = "SELECT rudnik.*, vrsta_rude.nazivRude AS vrstaRude 
+        FROM rudnik
+        JOIN vrsta_rude ON rudnik.idRude = vrsta_rude.id 
+        WHERE rudnik.imeRudnika LIKE :filterVrednost";
         $filterVrednost = "%" . $filterVrednost . "%";
         $parametri = [':filterVrednost' => $filterVrednost];
         $izjava = $this->izvrsiUpit($upit, $parametri);
