@@ -13,18 +13,18 @@ $databaseConfig = "../config/database-config.xml";
 
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
-    if (isset($_POST["imeRudnika"], $_POST["vrstaRude"])) {
+    if (isset($_POST["imeRudnika"], $_POST["idRude"])) {
         $imeRudnika = Bezbednost::sanitacijaInputa($_POST["imeRudnika"]);
-        $vrstaRude = Bezbednost::sanitacijaInputa($_POST["vrstaRude"]);
+        $idRude = Bezbednost::sanitacijaInputa($_POST["idRude"]);
         $imaDozvolu = isset($_POST["imaDozvolu"]) && $_POST["imaDozvolu"] === "on";
         $imaDozvolu = $imaDozvolu ? true : false;
         try {
             $imeRudnika = Bezbednost::validacijaUnosa($imeRudnika, "txt");
-            $vrstaRude = Bezbednost::validacijaUnosa($vrstaRude, "txt");
+            $idRude = Bezbednost::validacijaUnosa($idRude, "int");
 
             $db = new Database($databaseConfig);
             $rudnik = new Rudnik($db->getConnection());
-            $rudnik->dodajRudnik($imeRudnika, $imaDozvolu, $vrstaRude);
+            $rudnik->dodajRudnik($imeRudnika, $imaDozvolu, $idRude);
 
             header("Location: /kontrola-rudnika");
             exit;

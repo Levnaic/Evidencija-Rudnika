@@ -103,7 +103,22 @@ INSERT INTO `vrsta_rude` (`id`, `nazivRude`, `granicaProfita`) VALUES
 
 DROP TABLE IF EXISTS `rudnik_pogled`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `rudnik_pogled`  AS SELECT `rudnik`.`id` AS `id`, `rudnik`.`imeRudnika` AS `imeRudnika`, `rudnik`.`idRude` AS `idRude`, `rudnik`.`ukupniPrihodi` AS `ukupniPrihodi`, `rudnik`.`ukupniRashodi` AS `ukupniRashodi`, `rudnik`.`profit` AS `profit` FROM `rudnik` WHERE `rudnik`.`imaDozvolu` = 1 ;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `rudnik_pogled` AS 
+SELECT 
+    `rudnik`.`id` AS `id`, 
+    `rudnik`.`imeRudnika` AS `imeRudnika`, 
+    `vrsta_rude`.`nazivRude` AS `vrstaRude`, 
+    `rudnik`.`ukupniPrihodi` AS `ukupniPrihodi`, 
+    `rudnik`.`ukupniRashodi` AS `ukupniRashodi`, 
+    `rudnik`.`profit` AS `profit` 
+FROM 
+    `rudnik` 
+JOIN 
+    `vrsta_rude` ON `rudnik`.`idRude` = `vrsta_rude`.`id` 
+WHERE 
+    `rudnik`.`imaDozvolu` = 1;
+
 
 ALTER TABLE `promet`
   ADD PRIMARY KEY (`id`),

@@ -49,9 +49,13 @@ class Rudnik extends OsnovniModel
         return $rudnik;
     }
 
+    // mozda treba promeniti
     public function ucitajProfitIRuduRudnikaPrekoId($id)
     {
-        $upit = "SELECT profit, vrstaRude FROM rudnik WHERE id = :id";
+        $upit = "SELECT rudnik.profit, vrsta_rude.nazivRude AS vrstaRude 
+        FROM rudnik 
+        JOIN vrsta_rude ON rudnik.idRude = vrsta_rude.id
+        WHERE rudnik.id = :id";
         $parametri = [":id" => $id];
         $izjava = $this->izvrsiUpit($upit, $parametri);
 
@@ -111,28 +115,28 @@ class Rudnik extends OsnovniModel
     }
 
     // POST
-    public function dodajRudnik($imeRudnika, $imaDozvolu, $vrstaRude)
+    public function dodajRudnik($imeRudnika, $imaDozvolu, $idRude)
     {
-        $upit = "INSERT INTO rudnik (imeRudnika, imaDozvolu, vrstaRude) VALUES (:imeRudnika, :imaDozvolu, :vrstaRude)";
+        $upit = "INSERT INTO rudnik (imeRudnika, imaDozvolu, idRude) VALUES (:imeRudnika, :imaDozvolu, :idRude)";
 
         $parametri = [
             ':imeRudnika' => $imeRudnika,
             ':imaDozvolu' => $imaDozvolu,
-            ':vrstaRude' => $vrstaRude
+            ':idRude' => $idRude
         ];
 
         $this->izvrsiUpit($upit, $parametri);
     }
 
     // PATCH
-    public function azurirajRudnik($id, $imeRudnika, $imaDozvolu, $vrstaRude)
+    public function azurirajRudnik($id, $imeRudnika, $imaDozvolu, $idRude)
     {
-        $upit = "UPDATE rudnik SET imeRudnika = :imeRudnika, imaDozvolu = :imaDozvolu, vrstaRude = :vrstaRude WHERE id = :id";
+        $upit = "UPDATE rudnik SET imeRudnika = :imeRudnika, imaDozvolu = :imaDozvolu, idRude = :idRude WHERE id = :id";
 
         $parametri = [
             ':imeRudnika' => $imeRudnika,
             ':imaDozvolu' => $imaDozvolu,
-            ':vrstaRude' => $vrstaRude,
+            ':idRude' => $idRude,
             ':id' => $id,
         ];
 
