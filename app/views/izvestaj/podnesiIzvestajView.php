@@ -17,6 +17,8 @@
             <input type="number" name="prihodi" id="prihodi" data-input-type="int"></input>
             <label for="rashodi">Rashodi</label>
             <input type="number" name="rashodi" id="rashodi" data-input-type="int">
+            <label for="opisIzvestaja">Opis Izvestaja</label>
+            <textarea name="opisIzvestaja" rows="7" id="opisIzvestaja" data-input-type="txt"></textarea>
             <div class="formButtons">
                 <button type="submit" class="formaBtn">Podnesi</button>
             </div>

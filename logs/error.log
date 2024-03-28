@@ -26,3 +26,92 @@
 27-03-2024 13:10:47 [Greška u bazi podataka] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'vrstaRude' in 'field list'|SELECT profit, vrstaRude FROM rudnik WHERE id = :id in Modeli\Rudnik on line 33
 27-03-2024 19:32:22 [Greška u bazi podataka] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'vrstaRude' in 'field list'|SELECT profit, vrstaRude FROM rudnik WHERE id = :id in Modeli\Rudnik on line 33
 27-03-2024 19:35:13 [Greska u logici] Ne postoji ogranicenje za odabranu rudu in Klase\PoslovnaLogika on line 36
+27-03-2024 19:39:25 [Greska u validaciji:] Pogresan forma intidzera in Klase\Bezbednost on line 90
+27-03-2024 19:39:25 [Greska u validaciji:] Pogresan forma intidzera in Klase\Bezbednost on line 96
+27-03-2024 19:43:13 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 19:47:40 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 19:48:08 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 19:48:11 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 19:48:13 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 19:49:03 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 19:49:04 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 19:49:04 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 19:49:04 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 19:49:07 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 19:49:07 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 19:49:08 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 19:49:08 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 19:49:45 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 20:51:22 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/validacijaIzvestaja.js not found in Klase\Ruter on line 73
+27-03-2024 20:51:40 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:51:41 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:51:41 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:52:09 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 20:52:22 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:52:55 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 20:53:02 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:53:04 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 20:53:26 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+27-03-2024 20:53:29 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:54:36 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:56:31 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:56:49 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/..main.js not found in Klase\Ruter on line 73
+27-03-2024 20:57:29 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/..main.js not found in Klase\Ruter on line 73
+27-03-2024 20:58:29 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:58:59 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+27-03-2024 20:59:03 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:52:41 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:52:43 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:52:57 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:53:08 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:53:12 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:53:24 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:53:53 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:54:48 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:54:49 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:54:50 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:54:54 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:54:55 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:55:07 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:55:10 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:55:17 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:55:26 [HTTP status 404] Page with url: /pregled-izvestaja/assets/scripts/main.js not found in Klase\Ruter on line 73
+28-03-2024 10:55:28 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:56:48 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:56:50 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 10:57:04 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 11:15:44 [Nepotpun zahtev] Nisu popunja sva input polja in C:\xampp\htdocs\evidencija-rudnika\app\controllers\izvestaj\podnesiIzvestajLogikaController.php on line 62
+28-03-2024 11:34:55 [Nepotpun zahtev] Nisu popunja sva input polja in C:\xampp\htdocs\evidencija-rudnika\app\controllers\izvestaj\podnesiIzvestajLogikaController.php on line 62
+28-03-2024 11:43:16 [Greska u validaciji:] Nema unosa. in Klase\Bezbednost on line 96
+28-03-2024 11:44:28 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 11:44:41 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 11:45:00 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:08:57 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:10:05 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:11:21 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:11:34 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:12:59 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:13:59 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:14:10 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:14:37 [Nepotpun zahtev] Nisu popunja sva input polja in C:\xampp\htdocs\evidencija-rudnika\app\controllers\izvestaj\podnesiIzvestajLogikaController.php on line 71
+28-03-2024 12:14:49 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:14:59 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:15:24 [Nepotpun zahtev] Nisu popunja sva input polja in C:\xampp\htdocs\evidencija-rudnika\app\controllers\izvestaj\podnesiIzvestajLogikaController.php on line 71
+28-03-2024 12:15:30 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:15:54 [Nepotpun zahtev] Nisu popunja sva input polja in C:\xampp\htdocs\evidencija-rudnika\app\controllers\izvestaj\podnesiIzvestajLogikaController.php on line 72
+28-03-2024 12:15:59 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 12:16:44 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 17:46:33 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 17:46:43 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 17:47:16 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 17:47:32 [Greska u validaciji:] Nema unosa. in Klase\Bezbednost on line 96
+28-03-2024 17:49:07 [Greska u validaciji:] Nema unosa. in Klase\Bezbednost on line 96
+28-03-2024 17:49:23 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 18:01:24 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 18:06:07 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 19:50:25 [Greska u validaciji:] Pogresan format teksta in Klase\Bezbednost on line 90
+28-03-2024 19:50:25 [Greska u validaciji:] Pogresan format teksta in Klase\Bezbednost on line 96
+28-03-2024 19:52:38 [Greska u validaciji:] Nema unosa. in Klase\Bezbednost on line 96
+28-03-2024 19:56:05 [Nepotpun zahtev] Nisu popunja sva input polja in C:\xampp\htdocs\evidencija-rudnika\app\controllers\izvestaj\azurirajIzvestajLogikaController.php on line 76
+28-03-2024 19:57:46 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73
+28-03-2024 19:58:30 [HTTP status 404] Page with url: /favicon.ico not found in Klase\Ruter on line 73

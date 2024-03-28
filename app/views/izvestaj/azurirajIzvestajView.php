@@ -18,9 +18,13 @@
             </select>
 
             <label for="prihodi">Prihodi</label>
-            <input type="number" name="prihodi" id="prihodi" data-input-type="int" value="<?php echo $red->prihodi; ?>"></input>
+            <input type="number" name="prihodi" id="prihodi" data-input-type="int" <?php echo (!$red->prihodi) ? "disabled class='nedozvoljeniInput'" : "value='{$red->prihodi}'"; ?>>
+
             <label for="rashodi">Rashodi</label>
-            <input type="number" name="rashodi" id="rashodi" data-input-type="int" value="<?php echo $red->rashodi; ?>">
+            <input type="number" name="rashodi" id="rashodi" data-input-type="int" <?php echo (!$red->rashodi) ? "disabled class='nedozvoljeniInput'" : "value='{$red->rashodi}'"; ?>>
+
+            <label for="opisIzvestaja">Opis Izvestaja</label>
+            <textarea name="opisIzvestaja" rows="7" id="opisIzvestaja" data-input-type="txt"><?php echo $red->opisIzvestaja; ?></textarea>
             <div class="formButtons">
                 <button type="submit" class="formaBtn">Dodaj</button>
             </div>

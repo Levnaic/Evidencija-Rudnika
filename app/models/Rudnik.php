@@ -49,7 +49,6 @@ class Rudnik extends OsnovniModel
         return $rudnik;
     }
 
-    // mozda treba promeniti
     public function ucitajProfitIRuduRudnikaPrekoId($id)
     {
         $upit = "SELECT rudnik.profit, vrsta_rude.nazivRude AS vrstaRude 

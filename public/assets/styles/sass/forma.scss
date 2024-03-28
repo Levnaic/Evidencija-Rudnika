@@ -3,7 +3,6 @@
 @import "partials/navbar";
 @import "partials/btn/formaBtn";
 
-
 body {
   position: relative;
   min-height: 100vh;
@@ -50,8 +49,19 @@ body {
           box-shadow: 0 0 10px $primarnaSvetlija;
         }
       }
+      textarea{
+        background-color: $primarnaSvetlija;
+        padding: 10px;
+        color: $tekstPrimarni;
+        border-color: $tekstPrimarni;
+      }
+      .nedozvoljeniInput {
+        background-color: $primarnaSvetlija_svetlija;
+        cursor: not-allowed;
+        border-color: $primarnaSvetlija_svetlija;
+      }
 
-      select{
+      select {
         margin: 15px 0;
         background-color: $primarnaSvetlija;
         border: 2px solid $tekstPrimarni;
@@ -59,7 +69,7 @@ body {
         border-radius: 4px;
         color: $tekstPrimarni;
       }
-      .checkBoxContainer{
+      .checkBoxContainer {
         margin: 20px 0;
         display: flex;
         align-items: center;
@@ -74,4 +84,3 @@ body {
     gap: 10px;
   }
 }
-

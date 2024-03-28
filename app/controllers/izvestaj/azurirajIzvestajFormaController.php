@@ -15,6 +15,7 @@ $databaseConfig = "../config/database-config.xml";
 
 $title = "Azuriranje rudnika";
 $css = "forma.css";
+$js = ["validacijaIzvestaja.js"];
 
 if (isset($_GET["id"])) {
     // sanitacija unosa
@@ -27,6 +28,10 @@ if (isset($_GET["id"])) {
         $izvestaj = new Izvestaj($db->getConnection());
         $red = $izvestaj->ucitajIzvestajPoId($id);
 
+        if ($red->prihodi == 0) $red->prihodi = "";
+        if ($red->rashodi == 0) $red->rashodi = "";
+        // Debug::dd($red->rashodi);
+
         $rudnik = new Rudnik($db->getConnection());
         $rudnici = $rudnik->ucitajRudnikeSaDozvolomImenaId();
         // greska pri validaciji
@@ -38,3 +43,4 @@ if (isset($_GET["id"])) {
 
 require "../app/views/partials/head.php";
 require "../app/views/izvestaj/azurirajIzvestajView.php";
+require "../app/views/partials/scripts.php";

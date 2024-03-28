@@ -4,7 +4,7 @@ return [
     'regexStrPatern' => "/^[a-zA-Z]*$/",
     'regexIntPatern' => '/^[0-9]*$/',
     'regexEmailPatern' => '/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/',
-    'regexTxtPatern' => "/^[a-zA-Z0-9.,!?()'\" ]*$/",
+    'regexTxtPatern' => "/^[\s\S]*$/",
     'regexKorisnickoImePatern' => "/^[a-zA-Z0-9._]{1,20}$/",
     'regexDatumPatern' => "/^\d{4}-\d{2}-\d{2}$/",
     'regexFloatPatern' => "/^-?\d*\.?\d+$/",

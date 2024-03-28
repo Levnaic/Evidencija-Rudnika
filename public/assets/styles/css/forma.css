@@ -226,6 +226,17 @@ body {
 #formaContainer .formaKartica form input:focus {
   box-shadow: 0 0 10px #b4d4ff;
 }
+#formaContainer .formaKartica form textarea {
+  background-color: #b4d4ff;
+  padding: 10px;
+  color: #3a3a3a;
+  border-color: #3a3a3a;
+}
+#formaContainer .formaKartica form .nedozvoljeniInput {
+  background-color: #667a96;
+  cursor: not-allowed;
+  border-color: #667a96;
+}
 #formaContainer .formaKartica form select {
   margin: 15px 0;
   background-color: #b4d4ff;

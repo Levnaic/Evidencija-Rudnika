@@ -84,29 +84,31 @@ class Izvestaj extends OsnovniModel
     }
 
     // POST
-    public function dodajIzvestaj($idRudnika, $prihodi, $rashodi, $podnesilac)
+    public function dodajIzvestaj($idRudnika, $prihodi, $rashodi, $podnesilac, $opisIzvesataja)
     {
-        $upit = "INSERT INTO promet (idRudnika, prihodi, rashodi, podnesilac) VALUES (:idRudnika, :prihodi, :rashodi, :podnesilac)";
+        $upit = "INSERT INTO promet (idRudnika, prihodi, rashodi, podnesilac, opisIzvestaja) VALUES (:idRudnika, :prihodi, :rashodi, :podnesilac, :opisIzvestaja)";
         $parametri = [
             ":idRudnika" => $idRudnika,
             ":prihodi" => $prihodi,
             ":rashodi" => $rashodi,
-            ":podnesilac" => $podnesilac
+            ":podnesilac" => $podnesilac,
+            ":opisIzvestaja" => $opisIzvesataja
         ];
 
         $this->izvrsiUpit($upit, $parametri);
     }
 
     // PATCH
-    public function azurirajIzvestaj($id, $idRudnika, $prihodi, $rashodi)
+    public function azurirajIzvestaj($id, $idRudnika, $prihodi, $rashodi, $opisIzvesataja)
     {
-        $upit = "UPDATE promet SET idRudnika = :idRudnika, prihodi = :prihodi, rashodi = :rashodi WHERE id = :id";
+        $upit = "UPDATE promet SET idRudnika = :idRudnika, prihodi = :prihodi, rashodi = :rashodi, opisIzvestaja = :opisIzvestaja WHERE id = :id";
 
         $parametri = [
             ':idRudnika' => $idRudnika,
             ':prihodi' => $prihodi,
             ':rashodi' => $rashodi,
             ':id' => $id,
+            ":opisIzvestaja" => $opisIzvesataja
         ];
 
         $this->izvrsiUpit($upit, $parametri);

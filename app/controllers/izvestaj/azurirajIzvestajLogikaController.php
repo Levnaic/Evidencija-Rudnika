@@ -16,24 +16,35 @@ $poslovnLogikaConfig = "../config/poslovna-logika.xml";
 
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
-    if (isset($_POST["idRudnika"], $_POST["prihodi"], $_POST["rashodi"])) {
+    if (
+        isset($_POST["idRudnika"], $_SESSION["korisnickoIme"], $_POST["opisIzvestaja"]) &&
+        (
+            (isset($_POST["prihodi"]) && !isset($_POST["rashodi"])) ||
+            (!isset($_POST["prihodi"]) && isset($_POST["rashodi"]))
+        )
+    ) {
         // sanitacija unosa
+        if (isset($_POST["prihodi"])) {
+            $prihodi = Bezbednost::sanitacijaInputa($_POST["prihodi"]);
+            $rashodi = 0;
+        } else {
+            $prihodi = 0;
+            $rashodi = Bezbednost::sanitacijaInputa($_POST["rashodi"]);
+        }
         $idRudnika = Bezbednost::sanitacijaInputa($_POST["idRudnika"]);
-        $prihodi = Bezbednost::sanitacijaInputa($_POST["prihodi"]);
-        $rashodi = Bezbednost::sanitacijaInputa($_POST["rashodi"]);
         $id = Bezbednost::sanitacijaInputa($_GET["id"]);
+        $opisIzvesataja = Bezbednost::sanitacijaInputa($_POST["opisIzvestaja"]);
 
         try {
             // validacija unosa
+            $prihodi ? Bezbednost::validacijaUnosa($prihodi, "int") : Bezbednost::validacijaUnosa($rashodi, "int");
             $idRudnika = Bezbednost::validacijaUnosa($idRudnika, "int");
-            $prihodi = Bezbednost::validacijaUnosa($prihodi, "int");
-            $rashodi = Bezbednost::validacijaUnosa($rashodi, "int");
             $id = Bezbednost::validacijaUnosa($id, "int");
 
             // unos azuriranog izvestaja u bazu
             $db = new Database($databaseConfig);
             $izvestaj = new Izvestaj($db->getConnection());
-            $izvestaj->azurirajIzvestaj($id, $idRudnika, $prihodi, $rashodi);
+            $izvestaj->azurirajIzvestaj($id, $idRudnika, $prihodi, $rashodi, $opisIzvesataja);
 
             // uzima profit posle azuriranja
             $rudnik = new Rudnik($db->getConnection());

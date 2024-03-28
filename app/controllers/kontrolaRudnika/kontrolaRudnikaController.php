@@ -12,7 +12,6 @@ Autentifikator::autentifikujAdmina();
 
 $databaseConfig = "../config/database-config.xml";
 
-
 $title = "Kontrola rudnika";
 $js = ["main.js"];
 $css = "tabela.css";
