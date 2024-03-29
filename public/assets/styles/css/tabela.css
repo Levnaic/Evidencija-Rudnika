@@ -185,6 +185,12 @@ nav .korisnik .padajuciMeniAktivan {
   background-color: #eef5ff;
   border: none;
 }
+.tabela table textarea {
+  background-color: #b4d4ff;
+  padding: 10px;
+  color: #3a3a3a;
+  border-color: #3a3a3a;
+}
 .tabela table .usersTableBtns .tableBtnsContainer {
   display: flex;
 }

@@ -29,6 +29,13 @@
         background-color: $pozadina;
         border: none;
       }
+
+      textarea{
+        background-color: $primarnaSvetlija;
+        padding: 10px;
+        color: $tekstPrimarni;
+        border-color: $tekstPrimarni;
+      }
   
       .usersTableBtns {
         .tableBtnsContainer {

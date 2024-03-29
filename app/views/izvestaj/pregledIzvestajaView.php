@@ -47,7 +47,7 @@
                 <td><?php echo $red->prihodi; ?></td>
                 <td><?php echo $red->rashodi; ?></td>
                 <td><?php echo $red->podnesilac; ?></td>
-                <td><?php echo $red->opisIzvestaja; ?></td>
+                <td> <textarea><?php echo $red->opisIzvestaja; ?></textarea></td>
                 <td class="usersTableBtns">
                     <div class="tableBtnsContainer">
                         <a href="/pregled-izvestaja/azuriraj-izvestaj?id=<?php echo $red->id; ?>" class="adminAction firstActionBtn">Ažuriraj</a>
