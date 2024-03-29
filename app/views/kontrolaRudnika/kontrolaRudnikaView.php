@@ -25,9 +25,9 @@
             <th>Naziv rudnika</th>
             <th>Vrsta rude</th>
             <th>Ima Dozvolu</th>
-            <th>Prihodi</th>
-            <th>Rashodi</th>
-            <th>Profit</th>
+            <th>Ukupni Prihodi</th>
+            <th>Ukupni Rashodi</th>
+            <th>Ukupan Profit</th>
             <th>Akcije</th>
         </tr>
         <!-- polja -->

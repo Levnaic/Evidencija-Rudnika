@@ -25,14 +25,14 @@ CREATE TABLE `promet` (
   `prihodi` int(11) NOT NULL,
   `rashodi` int(11) NOT NULL,
   `podnesilac` varchar(50) NOT NULL,
-  `opisIzvoda` varchar(300) NOT NULL
+  `opisIzvestaja` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-INSERT INTO `promet` (`id`, `idRudnika`, `datum`, `prihodi`, `rashodi`, `podnesilac`, `opisIzvoda`) VALUES
-(17, 20, '2024-01-18 09:59:41', 3000, 200, 'test'),
-(18, 20, '2024-01-18 09:59:49', 2500, 500, 'test'),
-(19, 21, '2024-01-18 10:00:03', 3000, 150, 'test'),
-(20, 21, '2024-01-18 10:00:12', 500, 4000, 'test');
+INSERT INTO `promet` (`id`, `idRudnika`, `datum`, `prihodi`, `rashodi`, `podnesilac`, `opisIzvestaja`) VALUES
+(17, 20, '2024-01-18 09:59:41', 3000, 0, 'test', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also'),
+(18, 20, '2024-01-18 09:59:49', 2500, 0, 'test', 'Prihodi ...'),
+(19, 21, '2024-01-18 10:00:03', 3000, 0, 'test', 'Prihodi ...'),
+(20, 21, '2024-01-18 10:00:12', 0, 4000, 'test', 'Plcacanje ...');
 
 DELIMITER $$
 

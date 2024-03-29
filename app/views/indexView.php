@@ -26,9 +26,9 @@
         <tr>
             <th>Naziv rudnika</th>
             <th>Vrsta rude</th>
-            <th>Prihodi</th>
-            <th>Rashodi</th>
-            <th>Profit</th>
+            <th>Ukupni Prihodi</th>
+            <th>Ukupni Rashodi</th>
+            <th>Ukupan Profit</th>
         </tr>
         <!-- polja -->
         <?php foreach ($redovi as $red) : ?>
